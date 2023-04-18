@@ -1,0 +1,21 @@
+{
+    "name": "@0xcacti/NAMEHERE",
+    "description": "<DESCRIPTION_HERE>",
+    "version": "0.1.0",
+    "author": {
+        "name": "0xcacti",
+        "url": "https://github.com/0xcacti"
+    },
+    "devDependencies": {
+        "bun-types": "^0.5.0",
+        "prettier": "^2.8.7",
+        "solhint": "^3.4.0"
+    },
+    "scripts": {
+        "clean": "rm -rf cache out",
+        "lint": "bun lint:sol && bun prettier:check",
+        "lint:sol": "forge fmt --check && bun solhint \"{script,src,test}/**/*.sol\"",
+        "prettier:check": "prettier --check \"**/*.{json,md,yml}\"",
+        "prettier:write": "prettier --write \"**/*.{json,md,yml}\""
+    }
+}
