@@ -1,14 +1,21 @@
 {
-  "solidity.packageDefaultDependenciesContractsDirectory": "src",
-  "solidity.packageDefaultDependenciesDirectory": "lib",
-  "solidity.compileUsingRemoteVersion": "v0.8.13",
   "editor.formatOnSave": true,
   "[solidity]": {
-    "editor.defaultFormatter": "JuanBlanco.solidity"
+    "editor.defaultFormatter": "NomicFoundation.hardhat-solidity"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "solidity.formatter": "forge",
-  "search.exclude": { "lib": true },
-  "files.associations": {
-    ".gas-snapshot": "julia"
-  }
+  "npm.exclude": "**/lib/**",
+  "search.exclude": { "lib": true }
 }
